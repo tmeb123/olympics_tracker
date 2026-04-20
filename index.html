@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,169 +21,153 @@
   .section-hd{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin:20px 0 10px;}
   .section-hd:first-child{margin-top:0;}
 
-  /* STANDINGS */
-  .podium{display:flex;align-items:flex-end;justify-content:center;gap:8px;margin:0 0 20px;}
-  .podium-step{text-align:center;border-radius:8px 8px 0 0;padding:10px 6px 8px;min-width:88px;display:flex;flex-direction:column;align-items:center;}
-  .podium-step.p1{height:120px;border:1px solid;justify-content:flex-start;}
-  .podium-step.p2{height:96px;border:1px solid #555;background:rgba(192,192,192,0.06);justify-content:flex-start;}
-  .podium-step.p3{height:76px;border:1px solid #7a4a1a;background:rgba(205,127,50,0.06);justify-content:flex-start;}
-  .podium-medal{font-size:16px;margin-bottom:4px;}
-  .podium-flag{font-size:22px;}
-  .podium-country{font-size:11px;font-weight:700;margin-top:3px;}
-  .podium-pts{font-size:13px;font-weight:800;color:var(--gold);margin-top:1px;}
-  .standings-list{display:flex;flex-direction:column;gap:8px;}
-  .standing-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:10px;position:relative;overflow:hidden;}
-  .standing-card .bar-bg{position:absolute;left:0;top:0;bottom:0;pointer-events:none;border-radius:10px;transition:width 0.5s ease;}
-  .rank-num{font-size:18px;font-weight:800;min-width:24px;text-align:center;}
-  .rank-1 .rank-num{color:var(--gold);}.rank-2 .rank-num{color:#C0C0C0;}.rank-3 .rank-num{color:#CD7F32;}.rank-other .rank-num{color:var(--muted);}
-  .standing-flag{font-size:26px;min-width:30px;}
-  .standing-info{flex:1;min-width:0;}
-  .standing-country{font-size:15px;font-weight:700;}
-  .standing-players{font-size:12px;color:var(--muted);margin-top:1px;}
-  .event-chips{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px;}
-  .event-chip{font-size:10px;padding:2px 6px;border-radius:20px;background:var(--surface2);color:var(--muted);border:1px solid var(--border);}
-  .event-chip.has-pts{border-color:rgba(245,197,24,0.3);color:var(--gold);}
-  .standing-pts{font-size:26px;font-weight:800;color:var(--gold);min-width:40px;text-align:right;}
-  .standing-pts-label{font-size:10px;color:var(--muted);text-align:right;text-transform:uppercase;}
+/* STANDINGS */
+.podium{display:flex;align-items:flex-end;justify-content:center;gap:8px;margin:0 0 20px;}
+.podium-step{text-align:center;border-radius:8px 8px 0 0;padding:10px 6px 8px;min-width:88px;display:flex;flex-direction:column;align-items:center;}
+.podium-step.p1{height:120px;border:1px solid;justify-content:flex-start;}
+.podium-step.p2{height:96px;border:1px solid #555;background:rgba(192,192,192,0.06);justify-content:flex-start;}
+.podium-step.p3{height:76px;border:1px solid #7a4a1a;background:rgba(205,127,50,0.06);justify-content:flex-start;}
+.podium-medal{font-size:16px;margin-bottom:4px;}
+.podium-flag{font-size:22px;}
+.podium-country{font-size:11px;font-weight:700;margin-top:3px;}
+.podium-pts{font-size:13px;font-weight:800;color:var(–gold);margin-top:1px;}
+.standings-list{display:flex;flex-direction:column;gap:8px;}
+.standing-card{background:var(–surface);border:1px solid var(–border);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:10px;position:relative;overflow:hidden;}
+.standing-card .bar-bg{position:absolute;left:0;top:0;bottom:0;pointer-events:none;border-radius:10px;transition:width 0.5s ease;}
+.rank-num{font-size:18px;font-weight:800;min-width:24px;text-align:center;}
+.rank-1 .rank-num{color:var(–gold);}.rank-2 .rank-num{color:#C0C0C0;}.rank-3 .rank-num{color:#CD7F32;}.rank-other .rank-num{color:var(–muted);}
+.standing-flag{font-size:26px;min-width:30px;}
+.standing-info{flex:1;min-width:0;}
+.standing-country{font-size:15px;font-weight:700;}
+.standing-players{font-size:12px;color:var(–muted);margin-top:1px;}
+.event-chips{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px;}
+.event-chip{font-size:10px;padding:2px 6px;border-radius:20px;background:var(–surface2);color:var(–muted);border:1px solid var(–border);}
+.event-chip.has-pts{border-color:rgba(245,197,24,0.3);color:var(–gold);}
+.standing-pts{font-size:26px;font-weight:800;color:var(–gold);min-width:40px;text-align:right;}
+.standing-pts-label{font-size:10px;color:var(–muted);text-align:right;text-transform:uppercase;}
 
-  /* COMMISSIONER TABLE */
-  .comm-table{background:var(--surface);border:1px solid rgba(245,197,24,0.25);border-radius:10px;margin-bottom:20px;overflow:hidden;}
-  .comm-hd{padding:12px 14px;background:rgba(245,197,24,0.06);border-bottom:1px solid rgba(245,197,24,0.15);display:flex;align-items:center;gap:8px;}
-  .comm-hd-title{font-size:14px;font-weight:700;color:var(--gold);}
-  .comm-hd-sub{font-size:11px;color:var(--muted);}
-  .comm-body{padding:12px 14px;}
-  .comm-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border);}
-  .comm-row:last-child{border-bottom:none;}
-  .comm-team{display:flex;align-items:center;gap:6px;min-width:110px;font-size:13px;font-weight:600;}
-  .comm-pts-display{font-size:13px;font-weight:700;min-width:32px;text-align:center;}
-  .comm-btn{width:34px;height:34px;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:18px;font-weight:300;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-  .comm-btn.plus{border-color:rgba(39,174,96,0.4);color:#2ecc71;}
-  .comm-btn.minus{border-color:rgba(192,57,43,0.4);color:#e74c3c;}
-  .comm-btn.plus:active{background:#0d2b18;}
-  .comm-btn.minus:active{background:#2b0d0d;}
-  .comm-note-input{flex:1;padding:7px 10px;font-size:12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);min-width:0;}
-  .comm-note-input::placeholder{color:var(--muted);}
+/* COMMISSIONER TABLE */
+.comm-table{background:var(–surface);border:1px solid rgba(245,197,24,0.25);border-radius:10px;margin-bottom:20px;overflow:hidden;}
+.comm-hd{padding:12px 14px;background:rgba(245,197,24,0.06);border-bottom:1px solid rgba(245,197,24,0.15);display:flex;align-items:center;gap:8px;}
+.comm-hd-title{font-size:14px;font-weight:700;color:var(–gold);}
+.comm-hd-sub{font-size:11px;color:var(–muted);}
+.comm-body{padding:12px 14px;}
+.comm-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(–border);}
+.comm-row:last-child{border-bottom:none;}
+.comm-team{display:flex;align-items:center;gap:6px;min-width:110px;font-size:13px;font-weight:600;}
+.comm-btn{width:34px;height:34px;border-radius:8px;border:1px solid var(–border);background:var(–surface2);color:var(–text);font-size:18px;font-weight:300;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.comm-btn.plus{border-color:rgba(39,174,96,0.4);color:#2ecc71;}
+.comm-btn.minus{border-color:rgba(192,57,43,0.4);color:#e74c3c;}
+.comm-btn.plus:active{background:#0d2b18;}
+.comm-btn.minus:active{background:#2b0d0d;}
+.comm-note-input{flex:1;padding:7px 10px;font-size:12px;background:var(–surface2);border:1px solid var(–border);border-radius:8px;color:var(–text);min-width:0;}
+.comm-note-input::placeholder{color:var(–muted);}
+.adj-log{margin-top:12px;border-top:1px solid var(–border);padding-top:12px;}
+.adj-log-title{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(–muted);text-transform:uppercase;margin-bottom:8px;}
+.adj-entry{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(–border);}
+.adj-entry:last-child{border-bottom:none;}
+.adj-entry-pts{font-size:13px;font-weight:800;min-width:32px;}
+.adj-entry-pts.pos{color:#2ecc71;}
+.adj-entry-pts.neg{color:#e74c3c;}
+.adj-entry-team{font-size:12px;font-weight:600;min-width:90px;}
+.adj-entry-note{font-size:12px;color:var(–muted);flex:1;}
+.adj-undo-btn{padding:3px 8px;font-size:11px;border:1px solid var(–border);background:none;color:var(–muted);border-radius:6px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+.adj-empty{font-size:12px;color:var(–muted);text-align:center;padding:12px 0;}
 
-  /* ADJUSTMENT LOG */
-  .adj-log{margin-top:12px;border-top:1px solid var(--border);padding-top:12px;}
-  .adj-log-title{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:8px;}
-  .adj-entry{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border);}
-  .adj-entry:last-child{border-bottom:none;}
-  .adj-entry-pts{font-size:13px;font-weight:800;min-width:32px;}
-  .adj-entry-pts.pos{color:#2ecc71;}
-  .adj-entry-pts.neg{color:#e74c3c;}
-  .adj-entry-team{font-size:12px;font-weight:600;min-width:90px;}
-  .adj-entry-note{font-size:12px;color:var(--muted);flex:1;}
-  .adj-undo-btn{padding:3px 8px;font-size:11px;border:1px solid var(--border);background:none;color:var(--muted);border-radius:6px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
-  .adj-empty{font-size:12px;color:var(--muted);text-align:center;padding:12px 0;}
+/* SCORE SHARED */
+.event-block{background:var(–surface);border:1px solid var(–border);border-radius:10px;margin-bottom:14px;overflow:hidden;}
+.event-block-hd{padding:12px 14px;border-bottom:1px solid var(–border);display:flex;align-items:center;justify-content:space-between;}
+.event-block-title{font-size:14px;font-weight:700;}
+.event-badge{font-size:10px;padding:2px 8px;border-radius:20px;background:var(–surface2);color:var(–muted);border:1px solid var(–border);}
+.event-block-body{padding:10px 14px;}
+.matchup{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:7px 0;border-bottom:1px solid var(–border);}
+.matchup:last-child{border-bottom:none;}
+.matchup-team{font-size:12px;color:var(–muted);}
+.matchup-team.won{font-weight:700;}
+.matchup-team.right{text-align:right;}
+.btn-group{display:flex;gap:4px;justify-content:center;align-items:center;}
+.win-btn{padding:5px 9px;font-size:11px;font-weight:600;border:1px solid var(–border);background:var(–surface2);color:var(–muted);border-radius:6px;cursor:pointer;transition:all 0.15s;white-space:nowrap;}
+.win-btn.active-green{background:#0d2b18;border-color:#27AE60;color:#2ecc71;}
+.win-btn.active-gold{background:#2a2000;border-color:var(–gold-dark);color:var(–gold);}
+.group-place{display:grid;grid-template-columns:50px 1fr 48px;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(–border);}
+.group-place:last-child{border-bottom:none;}
+.place-label{font-size:12px;font-weight:700;color:var(–muted);}
+.place-select{width:100%;padding:7px 10px;font-size:13px;border:1px solid var(–border);background:var(–surface2);color:var(–text);border-radius:8px;appearance:none;}
+.place-pts{font-size:12px;color:var(–gold);text-align:right;font-weight:700;}
+.volley-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(–border);}
+.volley-row:last-child{border-bottom:none;}
+.volley-team{font-size:13px;display:flex;align-items:center;gap:6px;}
+.volley-controls{display:flex;align-items:center;gap:8px;}
+.stepper-btn{width:32px;height:32px;border-radius:8px;border:1px solid var(–border);background:var(–surface2);color:var(–text);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.stepper-val{font-size:18px;font-weight:800;min-width:28px;text-align:center;color:var(–gold);}
 
-  /* SCORE SHARED */
-  .event-block{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:14px;overflow:hidden;}
-  .event-block-hd{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
-  .event-block-title{font-size:14px;font-weight:700;}
-  .event-badge{font-size:10px;padding:2px 8px;border-radius:20px;background:var(--surface2);color:var(--muted);border:1px solid var(--border);}
-  .event-block-body{padding:10px 14px;}
-  .matchup{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:7px 0;border-bottom:1px solid var(--border);}
-  .matchup:last-child{border-bottom:none;}
-  .matchup-team{font-size:12px;color:var(--muted);}
-  .matchup-team.won{font-weight:700;}
-  .matchup-team.right{text-align:right;}
-  .btn-group{display:flex;gap:4px;justify-content:center;align-items:center;}
-  .win-btn{padding:5px 9px;font-size:11px;font-weight:600;border:1px solid var(--border);background:var(--surface2);color:var(--muted);border-radius:6px;cursor:pointer;transition:all 0.15s;white-space:nowrap;}
-  .win-btn.active-green{background:#0d2b18;border-color:#27AE60;color:#2ecc71;}
-  .win-btn.active-gold{background:#2a2000;border-color:var(--gold-dark);color:var(--gold);}
-  .group-place{display:grid;grid-template-columns:50px 1fr 48px;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);}
-  .group-place:last-child{border-bottom:none;}
-  .place-label{font-size:12px;font-weight:700;color:var(--muted);}
-  .place-select{width:100%;padding:7px 10px;font-size:13px;border:1px solid var(--border);background:var(--surface2);color:var(--text);border-radius:8px;appearance:none;}
-  .place-pts{font-size:12px;color:var(--gold);text-align:right;font-weight:700;}
-  .volley-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);}
-  .volley-row:last-child{border-bottom:none;}
-  .volley-team{font-size:13px;display:flex;align-items:center;gap:6px;}
-  .volley-controls{display:flex;align-items:center;gap:8px;}
-  .stepper-btn{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-  .stepper-val{font-size:18px;font-weight:800;min-width:28px;text-align:center;color:var(--gold);}
+/* ELIM EVENTS */
+.elim-info{font-size:12px;color:var(–muted);line-height:1.6;margin-bottom:12px;padding:10px 12px;background:var(–surface2);border-radius:8px;border:1px solid var(–border);}
+.elim-player{display:flex;align-items:center;gap:10px;padding:10px 13px;border-radius:10px;border:1px solid var(–border);background:var(–surface);margin-bottom:7px;transition:opacity 0.2s;}
+.elim-player.out{opacity:0.35;}
+.elim-pflag{font-size:18px;min-width:22px;}
+.elim-pinfo{flex:1;}
+.elim-pname{font-size:13px;font-weight:600;}
+.elim-pteam{font-size:11px;color:var(–muted);}
+.finish-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap;}
+.fb-1{background:rgba(245,197,24,0.15);color:var(–gold);border:1px solid var(–gold-dark);}
+.fb-2{background:rgba(192,192,192,0.1);color:#C0C0C0;border:1px solid #555;}
+.fb-3{background:rgba(205,127,50,0.1);color:#CD7F32;border:1px solid #7a4a1a;}
+.elim-btn{padding:5px 10px;font-size:11px;font-weight:700;border:1px solid var(–border);background:var(–surface2);color:var(–muted);border-radius:6px;cursor:pointer;}
+.darts-lives{display:flex;gap:4px;}
+.life-dot{width:10px;height:10px;border-radius:50%;background:#27AE60;}
+.life-dot.lost{background:var(–surface2);border:1px solid var(–border);}
+.undo-btn{width:100%;padding:10px;font-size:13px;font-weight:600;border:1px solid var(–border);background:none;color:var(–muted);border-radius:8px;cursor:pointer;margin-bottom:12px;}
+.elim-pts-box{background:var(–surface2);border:1px solid var(–border);border-radius:10px;padding:12px 14px;}
+.elim-pts-row{display:flex;align-items:center;justify-content:space-between;padding:5px 0;font-size:13px;border-bottom:1px solid var(–border);}
+.elim-pts-row:last-child{border-bottom:none;}
 
-  /* ELIM EVENTS */
-  .elim-info{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px;padding:10px 12px;background:var(--surface2);border-radius:8px;border:1px solid var(--border);}
-  .elim-player{display:flex;align-items:center;gap:10px;padding:10px 13px;border-radius:10px;border:1px solid var(--border);background:var(--surface);margin-bottom:7px;transition:opacity 0.2s;}
-  .elim-player.out{opacity:0.35;}
-  .elim-pflag{font-size:18px;min-width:22px;}
-  .elim-pinfo{flex:1;}
-  .elim-pname{font-size:13px;font-weight:600;}
-  .elim-pteam{font-size:11px;color:var(--muted);}
-  .finish-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap;}
-  .fb-1{background:rgba(245,197,24,0.15);color:var(--gold);border:1px solid var(--gold-dark);}
-  .fb-2{background:rgba(192,192,192,0.1);color:#C0C0C0;border:1px solid #555;}
-  .fb-3{background:rgba(205,127,50,0.1);color:#CD7F32;border:1px solid #7a4a1a;}
-  .elim-btn{padding:5px 10px;font-size:11px;font-weight:700;border:1px solid var(--border);background:var(--surface2);color:var(--muted);border-radius:6px;cursor:pointer;}
-  .darts-lives{display:flex;gap:4px;}
-  .life-dot{width:10px;height:10px;border-radius:50%;background:#27AE60;}
-  .life-dot.lost{background:var(--surface2);border:1px solid var(--border);}
-  .undo-btn{width:100%;padding:10px;font-size:13px;font-weight:600;border:1px solid var(--border);background:none;color:var(--muted);border-radius:8px;cursor:pointer;margin-bottom:12px;}
-  .elim-pts-box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;}
-  .elim-pts-row{display:flex;align-items:center;justify-content:space-between;padding:5px 0;font-size:13px;border-bottom:1px solid var(--border);}
-  .elim-pts-row:last-child{border-bottom:none;}
+/* RULES */
+.rules-ev{background:var(–surface);border:1px solid var(–border);border-radius:10px;margin-bottom:12px;overflow:hidden;}
+.rules-hd{padding:13px 14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;user-select:none;}
+.rules-hd.open{border-bottom-color:var(–border);}
+.rules-hl{display:flex;align-items:center;gap:10px;flex:1;}
+.rules-icon{font-size:18px;}
+.rules-title{font-size:14px;font-weight:700;}
+.rules-tag{font-size:10px;color:var(–gold);background:rgba(245,197,24,0.1);border:1px solid rgba(245,197,24,0.25);padding:2px 7px;border-radius:20px;white-space:nowrap;}
+.rules-arrow{color:var(–muted);font-size:12px;transition:transform 0.2s;margin-left:8px;}
+.rules-arrow.open{transform:rotate(90deg);}
+.rules-body{padding:14px;display:none;}
+.rules-body.open{display:block;}
+.rules-body p{font-size:13px;color:var(–muted);line-height:1.7;margin-bottom:10px;}
+.rules-body p:last-child{margin-bottom:0;}
+.rules-body strong{color:var(–text);font-weight:600;}
+.house-rule{background:var(–surface);border:1px solid var(–border);border-radius:10px;padding:13px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start;}
+.hr-icon{font-size:20px;min-width:26px;}
+.hr-text{font-size:13px;color:var(–muted);line-height:1.6;}
+.hr-text strong{color:var(–text);display:block;margin-bottom:2px;font-size:14px;}
 
-  /* SCHEDULE */
-  .sched-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
-  .sched-item:last-child{border-bottom:none;}
-  .sched-time{font-size:12px;color:var(--muted);min-width:42px;padding-top:2px;font-weight:600;}
-  .sched-info{flex:1;}
-  .sched-name{font-size:14px;font-weight:700;}
-  .sched-name.brk{color:var(--muted);font-weight:400;font-style:italic;}
-  .sched-desc{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5;}
-  .sched-badge{font-size:10px;padding:3px 8px;border-radius:20px;border:1px solid;white-space:nowrap;font-weight:600;}
-  .sb-done{background:#0d2b18;border-color:#27AE60;color:#2ecc71;}
-  .sb-up{background:var(--surface2);border-color:var(--border);color:var(--muted);}
-
-  /* RULES */
-  .rules-ev{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:12px;overflow:hidden;}
-  .rules-hd{padding:13px 14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;user-select:none;}
-  .rules-hd.open{border-bottom-color:var(--border);}
-  .rules-hl{display:flex;align-items:center;gap:10px;flex:1;}
-  .rules-icon{font-size:18px;}
-  .rules-title{font-size:14px;font-weight:700;}
-  .rules-tag{font-size:10px;color:var(--gold);background:rgba(245,197,24,0.1);border:1px solid rgba(245,197,24,0.25);padding:2px 7px;border-radius:20px;white-space:nowrap;}
-  .rules-arrow{color:var(--muted);font-size:12px;transition:transform 0.2s;margin-left:8px;}
-  .rules-arrow.open{transform:rotate(90deg);}
-  .rules-body{padding:14px;display:none;}
-  .rules-body.open{display:block;}
-  .rules-body p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:10px;}
-  .rules-body p:last-child{margin-bottom:0;}
-  .rules-body strong{color:var(--text);font-weight:600;}
-  .house-rule{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:13px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start;}
-  .hr-icon{font-size:20px;min-width:26px;}
-  .hr-text{font-size:13px;color:var(--muted);line-height:1.6;}
-  .hr-text strong{color:var(--text);display:block;margin-bottom:2px;font-size:14px;}
-
-  /* TEAMS */
-  .team-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:13px 14px;margin-bottom:10px;}
-  .team-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
-  .flag-sel{font-size:20px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:4px 8px;color:var(--text);}
-  .t-input{width:100%;padding:9px 12px;font-size:14px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);margin-bottom:8px;}
-  .t-input:last-child{margin-bottom:0;}
-  .t-input::placeholder{color:var(--muted);}
-  input[type="color"]{width:36px;height:32px;border-radius:6px;border:1px solid var(--border);background:none;padding:0;cursor:pointer;}
-  .reset-btn{width:100%;padding:12px;margin-top:20px;background:none;border:1px solid #c0392b;color:#e74c3c;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;}
+/* TEAMS */
+.team-card{background:var(–surface);border:1px solid var(–border);border-radius:10px;padding:13px 14px;margin-bottom:10px;}
+.team-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.flag-sel{font-size:20px;background:var(–surface2);border:1px solid var(–border);border-radius:8px;padding:4px 8px;color:var(–text);}
+.t-input{width:100%;padding:9px 12px;font-size:14px;background:var(–surface2);border:1px solid var(–border);border-radius:8px;color:var(–text);margin-bottom:8px;}
+.t-input:last-child{margin-bottom:0;}
+.t-input::placeholder{color:var(–muted);}
+input[type=“color”]{width:36px;height:32px;border-radius:6px;border:1px solid var(–border);background:none;padding:0;cursor:pointer;}
+.reset-btn{width:100%;padding:12px;margin-top:20px;background:none;border:1px solid #c0392b;color:#e74c3c;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;}
 </style>
+
 </head>
 <body>
 
 <div class="app-header">
   <h1>&#127866; Beer Olympics 2026</h1>
-  <p>5 teams &middot; 7 events &middot; 1 champion</p>
+  <p>5 teams &middot; 8 events &middot; 1 champion</p>
 </div>
 <div class="tab-bar">
   <button class="tab-btn active" onclick="showTab('standings')">Standings</button>
   <button class="tab-btn" onclick="showTab('score')">Score</button>
-  <button class="tab-btn" onclick="showTab('schedule')">Schedule</button>
   <button class="tab-btn" onclick="showTab('rules')">Rules</button>
   <button class="tab-btn" onclick="showTab('teams')">Teams</button>
 </div>
 <div id="panel-standings" class="panel active"></div>
 <div id="panel-score" class="panel"></div>
-<div id="panel-schedule" class="panel"></div>
 <div id="panel-rules" class="panel"></div>
 <div id="panel-teams" class="panel"></div>
 
@@ -195,41 +180,36 @@ const DEF_TEAMS=[
   {flag:'⛰️',country:'Colorado',    color:'#D4FF00',players:['Player 9','Player 10']},
 ];
 
+// All 8 events in order — slap cup first
 const EVENTS=[
-  {id:'cornhole',    name:'Cornhole',        type:'rr',   winPts:3,bonus:null,icon:'🪃'},
-  {id:'elimcup',     name:'Elimination Cup', type:'elim',                     icon:'🍺'},
-  {id:'beerpong',    name:'Beer Pong',        type:'rr',   winPts:3,bonus:1,  icon:'🏓'},
-  {id:'darts',       name:'Darts (Knockout)',type:'darts',                    icon:'🎯'},
-  {id:'volleyball',  name:'Pool Volleyball', type:'vball',                    icon:'🏐'},
-  {id:'shuffleboard',name:'Shuffleboard',    type:'rr',   winPts:3,bonus:null,icon:'🥌'},
-  {id:'relay',       name:'Relay Race',      type:'group',
+  {id:'slapcup',     name:'Slap Cup',           type:'elim',                     icon:'👋'},
+  {id:'cornhole',    name:'Cornhole',            type:'rr',   winPts:3,bonus:null,icon:'🪃'},
+  {id:'elimcup',     name:'Elimination Cup',     type:'elim',                     icon:'🍺'},
+  {id:'beerpong',    name:'Beer Pong',            type:'rr',   winPts:3,bonus:1,  icon:'🏓'},
+  {id:'darts',       name:'Darts (Knockout)',     type:'darts',                    icon:'🎯'},
+  {id:'volleyball',  name:'Pool Volleyball',      type:'vball',                    icon:'🏐'},
+  {id:'shuffleboard',name:'Shuffleboard',         type:'rr',   winPts:3,bonus:null,icon:'🥌'},
+  {id:'relay',       name:'Relay Race',           type:'group',
     places:[{l:'1st',p:8},{l:'2nd',p:5},{l:'3rd',p:3},{l:'4th',p:1},{l:'5th',p:1}],icon:'🏁'},
 ];
 
-const SCHED=[
-  {time:'12:00',name:'Opening Ceremony', desc:'Draw teams, assign flags, play anthem',brk:true},
-  {time:'12:10',name:'Cornhole',         desc:'Round robin · first to 11 · elimination scoring · 3 pts/win',eid:'cornhole'},
-  {time:'12:35',name:'Elimination Cup',  desc:'All 10 flip simultaneously · last to land eliminated · 5/3/1 pts',eid:'elimcup'},
-  {time:'12:55',name:'Break',            desc:'Food, water, trash talk',brk:true},
-  {time:'1:15', name:'Beer Pong',        desc:'Round robin · 10 cups · 3 pts/win · +1 shutout bonus',eid:'beerpong'},
-  {time:'2:00', name:'Darts — Knockout', desc:'All 10 players · 3 lives each · last standing wins · 5/3/1 pts',eid:'darts'},
-  {time:'2:25', name:'Break',            desc:'Jump in the pool',brk:true},
-  {time:'2:40', name:'Pool Volleyball',  desc:'King of the court · teams of 2 · 1 pt per match win over 30 min',eid:'volleyball'},
-  {time:'3:10', name:'Shuffleboard',     desc:'Round robin · first to 15 · 3 pts/win',eid:'shuffleboard'},
-  {time:'3:45', name:'Relay Race',       desc:'All 5 teams simultaneously · 8/5/3/1/1 pts',eid:'relay'},
-  {time:'4:05', name:'Medals Ceremony',  desc:'Tally scores · podium · national anthems',brk:true},
-];
-
 const RULES=[
+  {id:'slapcup',icon:'👋',name:'Slap Cup',pts:'5/3/1 pts for last 3 standing',body:[
+    ['Setup','Fill 20+ cups with a small amount of beer and place them in the center of the table. All 10 players stand around the table. Each player starts with one empty cup and one ping pong ball.'],
+    ['How to Play','Two players start simultaneously on opposite sides of the table. Each tries to bounce their ping pong ball into their cup. Once you land it, you pass your cup and ball to the player on your left. <strong>If the player to your left hasn\'t landed their ball yet, you slap their cup away — they\'re eliminated.</strong> That player must drink a center cup before leaving.'],
+    ['Elimination','When your cup gets slapped away, you\'re out. Play continues until one player is left standing.'],
+    ['Scoring','Last player standing = <strong>1st (5 pts)</strong> for their team. Second-to-last = <strong>2nd (3 pts)</strong>. Third-to-last = <strong>3rd (1 pt)</strong>. Use the tracker in the Score tab — tap players as they get eliminated.'],
+    ['Tips','You can only slap the cup of the person immediately to your left. If you miss your bounce, keep trying — you can\'t pass until you land it. Speed is everything.'],
+  ]},
   {id:'cornhole',icon:'🪃',name:'Cornhole',pts:'3 pts/win',body:[
     ['Setup','Two boards 27 feet apart. Teams of 2. Each player throws 4 bags per round, alternating with the opponent across.'],
     ['Elimination Scoring','Hole = 3 pts, Board = 1 pt. Scores cancel each round — net points only. First team to reach exactly <strong>11</strong> wins.'],
     ['Rules','Bounce-ins don\'t count. Bags hanging off don\'t count. Knocking opponents off is legal and encouraged.'],
   ]},
   {id:'elimcup',icon:'🍺',name:'Elimination Cup',pts:'5/3/1 pts for last 3 standing',body:[
-    ['Setup','All 10 players stand in a line or circle, each with a cup ~1/3 full of beer. No teams — everyone competes individually.'],
+    ['Setup','All 10 players stand around a table, each with a cup ~1/3 full of beer. No teams — everyone competes individually.'],
     ['How to Play','On GO, everyone chugs simultaneously then flips their cup right-side-up on the table edge using one hand from the bottom rim. <strong>Last person to successfully land their flip is eliminated.</strong> Refill and repeat.'],
-    ['Scoring','Eliminate one player per round until 3 remain. Play one final round: last to flip = 2nd (3 pts), winner = 1st (5 pts). The player eliminated just before the final 3 = 3rd (1 pt).'],
+    ['Scoring','Eliminate one player per round until 3 remain. Play one final round: last to flip = 2nd (3 pts), winner = 1st (5 pts). Player eliminated just before the final 3 = 3rd (1 pt).'],
     ['Tips','Cup must fully land and stay upright. Both teammates can finish top 3 — a 1st + 2nd sweep = 8 pts for the team.'],
   ]},
   {id:'beerpong',icon:'🏓',name:'Beer Pong',pts:'3 pts/win · +1 shutout',body:[
@@ -266,15 +246,15 @@ const RULES=[
 ];
 
 const HOUSE_RULES=[
-  {icon:'⚡',title:'The Nuclear Option',body:'Declare before any round robin matchup. Both teams take a shot before playing. Win = +1 bonus pt, lose = −1 pt. One use per team per tournament. Use the Commissioner\'s Table to apply the bonus/penalty.'},
-  {icon:'2️⃣',title:'Double Down',body:'Declare before any round robin matchup (no shot required). Win = +2 pts instead of the normal +3, lose = −1 pt. A conservative gamble. Use Commissioner\'s Table to adjust.'},
-  {icon:'🗡️',title:'The Assassin',body:'Before Darts, one player secretly tells the commissioner a target. If they eliminate that specific person, their team gets +2 bonus pts. Commissioner tracks it privately, reveals if it triggers.'},
-  {icon:'🐶',title:'The Underdog Bet',body:'Only available to the team in last place. Declare before any event. Win the event outright = double the points. Finish last again = take a shot and get nothing. Commissioner\'s Table handles the adjustment.'},
-  {icon:'🛡️',title:'The Shield',body:'Once per tournament a team can reject a Nuclear Option declaration. Declaring team still takes the shot but matchup returns to normal stakes. Free to use — you only get one.'},
-  {icon:'↩️',title:'The Counter',body:'If someone declares Double Down on you, you can counter-declare. Winner gets double points, both teams take a shot. Mutually assured destruction.'},
-  {icon:'💰',title:'The Bounty',body:'Commissioner secretly places a bounty on one team before any event — written down and sealed. Any team that beats the bounty team head-to-head gets +1 bonus pt. Bounty team doesn\'t know. Commissioner reveals at end of event.'},
-  {icon:'💀',title:'Cursed Lane',body:'Commissioner secretly designates one matchup in Cornhole or Shuffleboard as cursed before the event. Losing team in that matchup takes a shot. No one knows which matchup until the commissioner reveals it after.'},
-  {icon:'☢️',title:'Sudden Death Round',body:'Commissioner can declare one round in Elimination Cup as sudden death — last TWO players to flip are both eliminated. Announced right before GO. One use only.'},
+  {icon:'⚡',title:'The Nuclear Option',body:'Declare before any round robin matchup. Both teams take a shot before playing. Win = +1 bonus pt, lose = −1 pt. One use per team per tournament. Use the Commissioner\'s Table to apply.'},
+  {icon:'2️⃣',title:'Double Down',body:'Declare before any round robin matchup (no shot). Win = +2 pts instead of +3, lose = −1 pt. Commissioner\'s Table handles the adjustment.'},
+  {icon:'🗡️',title:'The Assassin',body:'Before Darts, one player secretly tells the commissioner a target. Eliminate that specific person = +2 bonus pts for their team. Commissioner tracks it privately.'},
+  {icon:'🐶',title:'The Underdog Bet',body:'Only available to the team in last place. Declare before any event. Win the event outright = double points. Finish last again = take a shot and get nothing.'},
+  {icon:'🛡️',title:'The Shield',body:'Once per tournament a team can reject a Nuclear Option declaration. Declaring team still takes the shot but matchup returns to normal stakes. One use only.'},
+  {icon:'↩️',title:'The Counter',body:'If someone declares Double Down on you, counter-declare. Winner gets double points, both teams take a shot. Mutually assured destruction.'},
+  {icon:'💰',title:'The Bounty',body:'Commissioner secretly designates one team before any event. Any team that beats the bounty team head-to-head gets +1 bonus pt. Bounty team doesn\'t know. Revealed at end of event.'},
+  {icon:'💀',title:'Cursed Lane',body:'Commissioner secretly designates one matchup in Cornhole or Shuffleboard as cursed. Losing team in that matchup takes a shot. No one knows which until the commissioner reveals it after.'},
+  {icon:'☢️',title:'Sudden Death Round',body:'Commissioner can call one round in Elimination Cup or Slap Cup where last TWO players eliminated are both out. Announced right before GO. One use only.'},
   {icon:'🍺',title:'Last place drinks',body:'The team in last place after each round-robin event must finish their current drink before the next event. No exceptions.'},
   {icon:'💀',title:'The Skunked Walk',body:'Get shut out in Beer Pong? Full lap holding your empty cup above your head. The crowd watches.'},
   {icon:'🎵',title:'National anthems',body:'After every event, play 10 seconds of the winning team\'s national anthem. Non-negotiable.'},
@@ -286,20 +266,20 @@ const HOUSE_RULES=[
 
 // ── STATE ─────────────────────────────────────────────────────────────────────
 function loadState(){
-  try{const r=localStorage.getItem('beerO26v3');if(r)return JSON.parse(r);}catch(e){}
+  try{const r=localStorage.getItem('beerO26v4');if(r)return JSON.parse(r);}catch(e){}
   return{
     teams:DEF_TEAMS.map(t=>({...t,players:[...t.players]})),
     rr:{},group:{},volley:[0,0,0,0,0],
+    slapcup:{history:[]},
     elimcup:{history:[]},
     darts:{history:[]},
-    // adjustments: [{teamIdx, pts, note, id}]
     adjustments:[],
-    // per-team note drafts (not persisted, just for input state)
     commNotes:['','','','',''],
   };
 }
-function saveState(){try{localStorage.setItem('beerO26v3',JSON.stringify(S));}catch(e){}}
+function saveState(){try{localStorage.setItem('beerO26v4',JSON.stringify(S));}catch(e){}}
 let S=loadState();
+if(!S.slapcup)S.slapcup={history:[]};
 if(!S.elimcup)S.elimcup={history:[]};
 if(!S.darts||!S.darts.history)S.darts={history:[]};
 if(!S.adjustments)S.adjustments=[];
@@ -311,19 +291,22 @@ function getPairs(){const p=[];for(let i=0;i<5;i++)for(let j=i+1;j<5;j++)p.push(
 function hex2rgba(hex,a){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return`rgba(${r},${g},${b},${a})`;}
 
 function getDartsState(){
-  const lives=[3,3,3,3,3,3,3,3,3,3];
-  const elimOrder=[];
-  S.darts.history.forEach(action=>{
-    if(action.type==='life'){
-      const pi=action.playerIdx;
-      if(lives[pi]>0){lives[pi]--;if(lives[pi]===0&&!elimOrder.includes(pi))elimOrder.push(pi);}
-    }
+  const lives=[3,3,3,3,3,3,3,3,3,3];const elimOrder=[];
+  S.darts.history.forEach(a=>{
+    if(a.type==='life'){const pi=a.playerIdx;if(lives[pi]>0){lives[pi]--;if(lives[pi]===0&&!elimOrder.includes(pi))elimOrder.push(pi);}}
   });
   return{lives,elimOrder};
 }
-function getElimCupState(){return{elimOrder:[...S.elimcup.history]};}
+function getElimState(key){return{elimOrder:[...S[key].history]};}
 
 // ── TOTALS ────────────────────────────────────────────────────────────────────
+function elimTop3Pts(elimOrder,t,players){
+  const n=elimOrder.length;
+  if(n>=1)t[players[elimOrder[n-1]].ti]+=5;
+  if(n>=2)t[players[elimOrder[n-2]].ti]+=3;
+  if(n>=3)t[players[elimOrder[n-3]].ti]+=1;
+}
+
 function getTotals(){
   const t=[0,0,0,0,0];
   const players=getPlayers();
@@ -336,17 +319,11 @@ function getTotals(){
     });
   });
 
-  // elim cup: last in history = 1st place
-  const ec=getElimCupState();const ecN=ec.elimOrder.length;
-  if(ecN>=1)t[players[ec.elimOrder[ecN-1]].ti]+=5;
-  if(ecN>=2)t[players[ec.elimOrder[ecN-2]].ti]+=3;
-  if(ecN>=3)t[players[ec.elimOrder[ecN-3]].ti]+=1;
+  elimTop3Pts(getElimState('slapcup').elimOrder,t,players);
+  elimTop3Pts(getElimState('elimcup').elimOrder,t,players);
 
-  // darts: last in elimOrder = 1st place
-  const ds=getDartsState();const dn=ds.elimOrder.length;
-  if(dn>=1)t[players[ds.elimOrder[dn-1]].ti]+=5;
-  if(dn>=2)t[players[ds.elimOrder[dn-2]].ti]+=3;
-  if(dn>=3)t[players[ds.elimOrder[dn-3]].ti]+=1;
+  const ds=getDartsState();
+  elimTop3Pts(ds.elimOrder,t,players);
 
   EVENTS.filter(e=>e.type==='group').forEach(ev=>{
     const g=S.group[ev.id]||{};
@@ -354,15 +331,19 @@ function getTotals(){
   });
 
   S.volley.forEach((w,i)=>{t[i]+=w;});
-
-  // manual adjustments
   S.adjustments.forEach(adj=>{t[adj.teamIdx]+=adj.pts;});
-
   return t;
 }
 
 function getEventPts(ti){
   const players=getPlayers();
+  function elimPts(elimOrder){
+    const n=elimOrder.length;
+    if(n>=1&&players[elimOrder[n-1]].ti===ti)return 5;
+    if(n>=2&&players[elimOrder[n-2]].ti===ti)return 3;
+    if(n>=3&&players[elimOrder[n-3]].ti===ti)return 1;
+    return 0;
+  }
   return EVENTS.map(ev=>{
     let p=0;
     if(ev.type==='rr'){
@@ -372,15 +353,9 @@ function getEventPts(ti){
         if((r==='a'&&a===ti)||(r==='b'&&b===ti)){p+=ev.winPts;if(ev.bonus&&S.rr[`${ev.id}_${a}_${b}_bonus`])p+=ev.bonus;}
       });
     }else if(ev.type==='elim'){
-      const ec=getElimCupState();const n=ec.elimOrder.length;
-      if(n>=1&&players[ec.elimOrder[n-1]].ti===ti)p+=5;
-      if(n>=2&&players[ec.elimOrder[n-2]].ti===ti)p+=3;
-      if(n>=3&&players[ec.elimOrder[n-3]].ti===ti)p+=1;
+      p=elimPts(getElimState(ev.id).elimOrder);
     }else if(ev.type==='darts'){
-      const ds=getDartsState();const n=ds.elimOrder.length;
-      if(n>=1&&players[ds.elimOrder[n-1]].ti===ti)p+=5;
-      if(n>=2&&players[ds.elimOrder[n-2]].ti===ti)p+=3;
-      if(n>=3&&players[ds.elimOrder[n-3]].ti===ti)p+=1;
+      p=elimPts(getDartsState().elimOrder);
     }else if(ev.type==='group'){
       const g=S.group[ev.id]||{};ev.places.forEach((pl,pi)=>{if(parseInt(g[pi])===ti)p+=pl.p;});
     }else if(ev.type==='vball'){p=S.volley[ti]||0;}
@@ -392,11 +367,11 @@ function getAdjTotal(ti){return S.adjustments.filter(a=>a.teamIdx===ti).reduce((
 
 // ── TABS ──────────────────────────────────────────────────────────────────────
 function showTab(tab){
-  ['standings','score','schedule','rules','teams'].forEach((id,i)=>{
+  ['standings','score','rules','teams'].forEach((id,i)=>{
     document.querySelectorAll('.tab-btn')[i].classList.toggle('active',id===tab);
     document.getElementById('panel-'+id).classList.toggle('active',id===tab);
   });
-  ({standings:renderStandings,score:renderScore,schedule:renderSchedule,rules:renderRules,teams:renderTeams})[tab]();
+  ({standings:renderStandings,score:renderScore,rules:renderRules,teams:renderTeams})[tab]();
 }
 
 // ── STANDINGS ─────────────────────────────────────────────────────────────────
@@ -442,7 +417,7 @@ function renderScore(){
     const typeLabel={rr:'Round Robin',elim:'Elimination',darts:'Knockout',vball:'King of Court',group:'Group Final'}[ev.type];
     html+=`<div class="event-block"><div class="event-block-hd"><span class="event-block-title">${ev.icon} ${ev.name}</span><span class="event-badge">${typeLabel}</span></div><div class="event-block-body">`;
     if(ev.type==='rr')html+=renderRR(ev);
-    else if(ev.type==='elim')html+=renderElimEvent();
+    else if(ev.type==='elim')html+=renderElimEvent(ev.id, ev.name);
     else if(ev.type==='darts')html+=renderDartsEvent();
     else if(ev.type==='vball')html+=renderVolley();
     else if(ev.type==='group')html+=renderGroup(ev);
@@ -453,35 +428,24 @@ function renderScore(){
 
 function renderCommTable(){
   let html=`<div class="comm-table">
-    <div class="comm-hd">
-      <span style="font-size:18px">⚡</span>
-      <div><div class="comm-hd-title">Commissioner's Table</div><div class="comm-hd-sub">Nuclear options, bounties, penalties, chaos</div></div>
-    </div>
+    <div class="comm-hd"><span style="font-size:18px">⚡</span><div><div class="comm-hd-title">Commissioner's Table</div><div class="comm-hd-sub">Nuclear options, bounties, penalties, chaos</div></div></div>
     <div class="comm-body">`;
-
   [0,1,2,3,4].forEach(ti=>{
     const tm=getTeam(ti);
-    const adjTotal=getAdjTotal(ti);
-    const adjDisplay=adjTotal===0?'0':(adjTotal>0?`+${adjTotal}`:String(adjTotal));
-    const adjColor=adjTotal>0?'#2ecc71':adjTotal<0?'#e74c3c':'var(--muted)';
     html+=`<div class="comm-row">
       <div class="comm-team" style="color:${tm.color}">${tm.flag} ${tm.country}</div>
       <button class="comm-btn minus" onclick="commAdj(${ti},-1)">−</button>
       <button class="comm-btn plus" onclick="commAdj(${ti},1)">+</button>
-      <input class="comm-note-input" id="comm-note-${ti}" placeholder="reason (Nuclear Option, Bounty...)" value="${S.commNotes[ti]||''}" oninput="S.commNotes[${ti}]=this.value" />
+      <input class="comm-note-input" id="comm-note-${ti}" placeholder="reason..." value="${S.commNotes[ti]||''}" oninput="S.commNotes[${ti}]=this.value" />
     </div>`;
   });
-
-  // Log
   html+=`<div class="adj-log"><div class="adj-log-title">Adjustment log</div>`;
   if(S.adjustments.length===0){
     html+=`<div class="adj-empty">No adjustments yet</div>`;
   }else{
-    // Show newest first
     [...S.adjustments].reverse().forEach((adj,revIdx)=>{
       const realIdx=S.adjustments.length-1-revIdx;
-      const tm=getTeam(adj.teamIdx);
-      const sign=adj.pts>=0?'+':'';
+      const tm=getTeam(adj.teamIdx);const sign=adj.pts>=0?'+':'';
       html+=`<div class="adj-entry">
         <span class="adj-entry-pts ${adj.pts>=0?'pos':'neg'}">${sign}${adj.pts}</span>
         <span class="adj-entry-team" style="color:${tm.color}">${tm.flag} ${tm.country}</span>
@@ -494,19 +458,13 @@ function renderCommTable(){
   return html;
 }
 
-function commAdj(ti, pts){
+function commAdj(ti,pts){
   const note=S.commNotes[ti]||'';
-  S.adjustments.push({teamIdx:ti, pts, note, id:Date.now()});
+  S.adjustments.push({teamIdx:ti,pts,note,id:Date.now()});
   S.commNotes[ti]='';
-  saveState();
-  renderScore();
+  saveState();renderScore();
 }
-
-function removeAdj(idx){
-  S.adjustments.splice(idx,1);
-  saveState();
-  renderScore();
-}
+function removeAdj(idx){S.adjustments.splice(idx,1);saveState();renderScore();}
 
 function renderRR(ev){
   let html='';
@@ -526,13 +484,20 @@ function renderRR(ev){
   return html;
 }
 
-function renderElimEvent(){
+// Generic elim renderer — shared by Slap Cup and Elimination Cup
+function renderElimEvent(evId, evName){
   const players=getPlayers();
-  const state=getElimCupState();
+  const state=getElimState(evId);
   const elimSet=new Set(state.elimOrder);
   const active=[0,1,2,3,4,5,6,7,8,9].filter(i=>!elimSet.has(i));
   const n=state.elimOrder.length;
-  let html=`<div class="elim-info">All 10 players flip simultaneously. <strong>Last to land their flip is eliminated.</strong> Tap the player who was last. Repeat until 3 remain — final round decides 1st and 2nd.</div>`;
+
+  const infoText = evId==='slapcup'
+    ? 'Players bounce a ping pong ball into their cup then pass left. <strong>If you land it before the person to your right, you can slap their cup away — they\'re eliminated.</strong> Tap the player when their cup gets slapped.'
+    : 'All 10 players flip simultaneously. <strong>Last to land their flip is eliminated.</strong> Tap the player who was last. Repeat until 3 remain.';
+
+  let html=`<div class="elim-info">${infoText}</div>`;
+
   if(active.length>0){
     html+=`<div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:8px">Still in — ${active.length} remaining</div>`;
     active.forEach(pi=>{
@@ -540,10 +505,11 @@ function renderElimEvent(){
       html+=`<div class="elim-player" style="border-left:3px solid ${hex2rgba(tm.color,0.6)}">
         <div class="elim-pflag">${tm.flag}</div>
         <div class="elim-pinfo"><div class="elim-pname" style="color:${tm.color}">${p.name}</div><div class="elim-pteam">${tm.country}</div></div>
-        <button class="elim-btn" onclick="elimCupElim(${pi})">Eliminated</button>
+        <button class="elim-btn" onclick="genericElim('${evId}',${pi})">Eliminated</button>
       </div>`;
     });
   }
+
   if(n>0){
     html+=`<div style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin:12px 0 8px">Eliminated</div>`;
     [...state.elimOrder].reverse().forEach((pi,revIdx)=>{
@@ -555,8 +521,9 @@ function renderElimEvent(){
       html+=`<div class="elim-player out"><div class="elim-pflag">${tm.flag}</div><div class="elim-pinfo"><div class="elim-pname">${p.name}</div><div class="elim-pteam">${tm.country}</div></div>${badge}</div>`;
     });
   }
-  if(n>0)html+=`<button class="undo-btn" onclick="elimCupUndo()">↩ Undo last elimination</button>`;
-  html+=renderElimPtsSummary(state.elimOrder,'Elimination Cup');
+
+  if(n>0)html+=`<button class="undo-btn" onclick="genericUndo('${evId}')">↩ Undo last elimination</button>`;
+  html+=renderElimPtsSummary(state.elimOrder, evName);
   return html;
 }
 
@@ -638,29 +605,10 @@ function setRR(id,a,b,w){const k=`${id}_${a}_${b}`;S.rr[k]=S.rr[k]===w?null:w;if
 function toggleBonus(id,a,b){const k=`${id}_${a}_${b}_bonus`;S.rr[k]=!S.rr[k];saveState();renderScore();}
 function setGroup(id,pi,v){if(!S.group[id])S.group[id]={};S.group[id][pi]=v===''?null:parseInt(v);saveState();}
 function adjVolley(ti,d){S.volley[ti]=Math.max(0,(S.volley[ti]||0)+d);saveState();renderScore();}
-function elimCupElim(pi){S.elimcup.history.push(pi);saveState();renderScore();}
-function elimCupUndo(){if(!S.elimcup.history.length)return;S.elimcup.history.pop();saveState();renderScore();}
+function genericElim(evId,pi){S[evId].history.push(pi);saveState();renderScore();}
+function genericUndo(evId){if(!S[evId].history.length)return;S[evId].history.pop();saveState();renderScore();}
 function dartsLife(pi){const ds=getDartsState();if(ds.elimOrder.includes(pi))return;S.darts.history.push({type:'life',playerIdx:pi});saveState();renderScore();}
 function dartsUndo(){if(!S.darts.history.length)return;S.darts.history.pop();saveState();renderScore();}
-
-// ── SCHEDULE ──────────────────────────────────────────────────────────────────
-function renderSchedule(){
-  const done=new Set();
-  EVENTS.forEach(ev=>{
-    if(ev.type==='rr'&&getPairs().some(([a,b])=>S.rr[`${ev.id}_${a}_${b}`]))done.add(ev.id);
-    if(ev.type==='elim'&&S.elimcup.history.length>0)done.add(ev.id);
-    if(ev.type==='darts'&&S.darts.history.length>0)done.add(ev.id);
-    if(ev.type==='vball'&&S.volley.some(v=>v>0))done.add(ev.id);
-    if(ev.type==='group'&&S.group[ev.id]&&S.group[ev.id][0]!=null)done.add(ev.id);
-  });
-  let html='';
-  SCHED.forEach(item=>{
-    const isDone=item.eid&&done.has(item.eid);
-    const badge=item.eid?`<span class="sched-badge ${isDone?'sb-done':'sb-up'}">${isDone?'Done':'Upcoming'}</span>`:'';
-    html+=`<div class="sched-item"><div class="sched-time">${item.time}</div><div class="sched-info"><div class="sched-name ${item.brk?'brk':''}">${item.name}</div><div class="sched-desc">${item.desc}</div></div>${badge}</div>`;
-  });
-  document.getElementById('panel-schedule').innerHTML=html;
-}
 
 // ── RULES ─────────────────────────────────────────────────────────────────────
 function renderRules(){
@@ -714,7 +662,7 @@ function setTeam(i,f,v){
 function resetScores(){
   if(!confirm('Reset all scores and adjustments? Teams and names stay.'))return;
   S.rr={};S.group={};S.volley=[0,0,0,0,0];
-  S.elimcup={history:[]};S.darts={history:[]};
+  S.slapcup={history:[]};S.elimcup={history:[]};S.darts={history:[]};
   S.adjustments=[];S.commNotes=['','','','',''];
   saveState();renderScore();renderStandings();
   alert('Scores cleared. Let\'s go.');
@@ -722,5 +670,6 @@ function resetScores(){
 
 renderStandings();
 </script>
+
 </body>
 </html>
